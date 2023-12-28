@@ -1,7 +1,7 @@
 all: testprog elfwriter
 
 testprog: testprog.c
-	gcc testprog.c -o testprog
+	gcc testprog.c -g -o testprog
 
 elfwriter: elfwriter.c
 	gcc elfwriter.c -lelf -o elfwriter
