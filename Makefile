@@ -12,3 +12,7 @@ repro: testprog elfwriter
 	cp ./testprog ./testprog_copy
 	./elfwriter ./testprog_copy
 	./testprog_copy
+
+.PHONY: clean
+clean:
+	rm -f ./testprog ./testprog_copy ./elfwriter
